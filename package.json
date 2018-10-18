@@ -1,0 +1,13 @@
+{
+  "name": "sales_api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "gulp scripts"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^5.0.0-alpha.3"
+  }
+}
