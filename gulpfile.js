@@ -12,9 +12,9 @@ gulp.task('scripts', () => {
 });
 
 // A task to watch for changes on TypeScript files in the src directory
-gulp.task('watch', ['scripts'], () => {
-  gulp.watch('src/**/*.ts', ['scripts']);
-});
+// gulp.task('watch', ['scripts'], () => {
+//   gulp.watch('src/**/*.ts', ['scripts']);
+// });
 
 // A task for compiling assets as needed (it's an API, so only JSON at the moment)
 gulp.task('assets', () => {
