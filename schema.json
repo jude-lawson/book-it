@@ -1,0 +1,40 @@
+{
+  "tables": {
+    "venues": {
+      "id": "integer",
+      "name": "varchar%80",
+      "capacity": "integer",
+      "category_id": "integer",
+      "owner_id": "integer"
+    },
+    "venue_categories": {
+      "id": "integer",
+      "venue_id": "integer",
+      "category_id": "integer"
+    },
+    "catgories": {
+      "id": "integer",
+      "title": "varchar%120"
+    },
+    "bookings": {
+      "id": "integer",
+      "venue_id": "integer",
+      "organizer_id": "integer"
+    },
+    "users": {
+      "id": "integer",
+      "first_name": "varchar%80",
+      "last_name": "varchar%80",
+      "email": "varchar%80",
+      "role": "enum",
+      "password_hash": "text"
+    },
+    "bookings": {
+      "id": "integer",
+      "venue_id": "integer",
+      "organizer_id": "integer",
+      "title": "varchar%80",
+      "description": "text"
+    }
+  }
+}
