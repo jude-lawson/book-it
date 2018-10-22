@@ -5,8 +5,8 @@
   "license": "MIT",
   "scripts": {
     "build": "gulp scripts",
-    "start": "yarn build && node dist/server.js",
-    "start:debug": "yarn build && node --inspect dist/server.js",
+    "start": "export NODE_ENV=development && yarn build && node dist/server.js",
+    "start:debug": "export NODE_ENV=development && yarn build && node --inspect dist/server.js",
     "test": "mocha -r ts-node/register test/**/*.spec.ts --exit"
   },
   "devDependencies": {
